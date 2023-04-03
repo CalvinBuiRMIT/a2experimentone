@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--col01: rgb(0,0,0);
+--col01: rgb(66, 66, 66);
+--col01: rgb(126,126,126);
+--col01: rgb(255,255,255);
+--border: 2px solid var(--col02)
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.952);
+    display: flex; /* this helps to make the body tag flexible. */
+    justify-content: center; /* this moves the tags within body to the center, horizontal axis.*/
+}
+main{
+    height: 100vh; /* makes main, the height of 100% of the device screen height, the width of 80% of the device screen height. */
+    width: 80vh; 
+    background-color: antiquewhite; 
+    padding: 22px 27px;
+    
+    display: grid; /* grid creates a grid that distributes all the divs throughout main*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* represents 5 columns */
+    gap: 5px; /* space between the squares in the composition */
+}
+
+/* .border_ */
+/* These are the classes that give the squares their rounded borders */
+
+.border_none{
+    border-radius: 0 0 0 0;
+}
+.border_top_left{
+    border-radius: 50% 0 0 0;
+}
+.border_top_right{
+    border-radius: 0 50% 0 0;
+}
+.border_bottom_right{
+    border-radius: 0 0 50% 0;
+}
+.border_bottom_left{
+    border-radius: 0 0 0 50%;
+}
+
+/* border-radius follows the order, border-radius: (top-left) (top-right) (bottom-right) (bottom-left);
+the percentage depends on the length of each side of the square */
+
+/* Although in the orginal "Hedra" some edges have boldness, 
+I have decided to not put this in my composition to make it seamless & minimalistic */
